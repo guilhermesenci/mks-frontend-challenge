@@ -1,0 +1,19 @@
+# Ignore arquivos gerados pela execução de comandos
+/node_modules
+/.next
+/.vscode
+
+# Ignore arquivos específicos
+/.eslintcache
+/prettier-debug.log
+
+# Ignore arquivos de compilação e configuração do TypeScript
+/tsconfig.tsbuildinfo
+/next-env.d.ts
+
+# Ignore arquivos de cache e build do Jest
+/.jest
+/jest.config.js
+
+# Ignore arquivos específicos do sistema
+.DS_Store
