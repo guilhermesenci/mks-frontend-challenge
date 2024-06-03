@@ -36,8 +36,8 @@ const CardBody = styled.div`
   justify-content: space-between;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 218px;
-  max-height: 285px;
+  width: 218px;
+  height: 285px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1352);
 `;
 
@@ -58,8 +58,8 @@ const ImgContainer = styled.div`
 `
 
 const ItemImage = styled.img`
-  max-width: 100px; 
-  height: auto; 
+  width: 80%; 
+  height: auto;
 `;
 
 const TitlePrice = styled.div`

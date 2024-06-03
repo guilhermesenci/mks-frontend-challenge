@@ -12,9 +12,13 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-content: center;
-height: 80vh;
-padding: 0 200px;
+margin-top: 120px;
+margin-bottom: 50px;
 gap: 22px;
+
+@media (min-width: 1024px) {
+  padding: 0 200px;
+}
 `
 
 interface ApiResponse {

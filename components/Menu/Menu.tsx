@@ -1,28 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-const getRightValue = ({ isOpen }: { isOpen: boolean }) => isOpen ? '0' : '-486px';
+const getRightValue = ({ isOpen }: { isOpen: boolean }) => isOpen ? '0' : '-100%';
 
 const SideMenuContainer = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
   right: ${({ isOpen }) => getRightValue({ isOpen })};
-  width: 486px;
   height: 100%;
+  width: 30%;
   background-color: #0F52BA;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 30;
   transition: right 0.3s ease;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 const Overlay = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
-  width: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  width: ${({ isOpen }) => (isOpen ? '70%' : '0')};
   height: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 3;
+  @media (max-width: 768px) {
+    display: ${({ isOpen }) => (isOpen ? 'none' : 'block')};
+  }
 `;
 
 const SideMenuHeader = styled.div`
@@ -36,7 +42,6 @@ const SideMenuHeader = styled.div`
 const TitleMenu = styled.span`
   font-weight: 700;
   font-size: 27px;
-  width: 300px;
   padding-left: 50px;
 
 `
@@ -83,7 +88,12 @@ const CardItem = styled.div`
   display: flex;
   justify-content:space-between;
   align-items: center;
-  width: 380px;
+  @media (min-width: 1024px) {
+    width: 380px;
+    gap: 0;
+  }
+  gap: 10px;
+  width: 90%;
   height: 95px;
   margin: 0 auto;
   padding: 23px;
@@ -138,6 +148,10 @@ font-size: 13px;
 font-weight: 400;
 line-height: 17px;
 text-align: left;
+@media (min-width: 768px) {
+  display: block;
+}
+display: none;
 `
 
 const ValueLabel = styled.span`

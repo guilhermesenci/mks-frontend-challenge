@@ -11,6 +11,9 @@ padding-left: 65px;
 padding-right: 88px;
 background-color: #0F52BA;
 height: 101px;
+top:0;
+z-index:2;
+position: fixed;
 `
 const SubTitle = styled.span`
 font-size: 20px;
