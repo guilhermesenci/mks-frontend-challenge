@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <FooterContent>
-        <FooterText>&copy; MKS Sistemas © Todos os direitos reservados.</FooterText>
+        <FooterText>&copy; Guilherme Senci © Todos os direitos reservados.</FooterText>
       </FooterContent>
     </FooterContainer>
   );

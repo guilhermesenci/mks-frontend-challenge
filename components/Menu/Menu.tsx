@@ -22,6 +22,7 @@ const Overlay = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
   left: 0;
+  transition: 0.3s;
   width: ${({ isOpen }) => (isOpen ? '70%' : '0')};
   height: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   background-color: rgba(0, 0, 0, 0.5);

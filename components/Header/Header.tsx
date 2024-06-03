@@ -54,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ cartItems, toggleSideMenu }) => {
   return (
     <HeaderContainer>
       <div>
-        <StyledTitle>MKS</StyledTitle>
+        <StyledTitle>GS</StyledTitle>
         <SubTitle>Sistemas</SubTitle>
       </div>
       <Cart onClick={toggleSideMenu}>
